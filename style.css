@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+div#bg_img {
+    /* background-image: url(./grass_background.jpeg); */
+    background-size: 100%;
+    position: relative;
+    /* padding-right: 20px;
+    padding-left: 20px; */
+}
+#headline {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    z-index: 1;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+#second_headline {
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 190px;
+    left: 20px;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+div#joining_form {
+    position: absolute;
+    background-color: white;
+    top: 30px;
+    right: 20px;
+    height: 270px;
+    width: 250px;
+    padding: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+#join {
+    font-size: medium;
+}
+#fill {
+    font-size: small;
+}
+input {
+    width: 200px;
+    margin-bottom: 5px;
+    height: 30px;
+}
+#subscribe {
+    background-color: green;
+    text-align: center;
+    width: 200px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 40px;
+}
+article {
+    padding-top: 30px;
+}
+h4{ 
+    padding-bottom: 20px;
+}
+h5.first_article {
+    margin-top: 30px;
+    font-size: medium;
+}
+p.article_p {
+    font-size: small;
+}
+section#secondery {
+    padding: 30px 20px 30px 20px;
+    background-color: rgb(216, 208, 189);
+    text-align: center;
+}
+article#footer {
+    text-align: center;
+}
+p.last_article {
+    margin-bottom: 5px;
+}
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+/* מה שנראה בטלפון */
+@media(max-width:576px) {
+    #headline  {
+        top: 10px;
+    }
+    #second_headline {
+        top: 55px;
+    }
+    div#joining_form{
+        top: 115px;
+        left: 30px;
+    }
+    article {
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .inline_fr {
+        float: left;
+        margin-left: 10px;
+        width: 50%;
+    }
+    .first_article {
+        margin-top: 10px !important;
+    }
+    img.float_article_img {
+        float: left;
+        margin-bottom: 10px;
+    }
+    .desktop {
+        display: none;
+    }
+    .last_article {
+        display: inline-block;
+        text-align: left;
+        padding: 10px;
+    }
+    .inline_sc {
+        float: left;
+        margin-top: 25px;
+        margin-left: 15px;
+        width: 30%;
+    }
+    #left_side {
+        border-right:none;
+        border-bottom: 1px solid black ;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    #desktop_footer {
+        display: none;
+    }
+    #mobile_desktop {
+        display: flex;
+    }
+    
+}
+/* מה שנראה בדסקטופ */
+@media(min-width:575px){
+    .mobile {
+        display: none;
+    }
+    article {
+        text-align: center;
+    }
+    div#left_side {
+        border-right: 1px solid black;
+    }
+    #mobile_footer {
+        display: none;
+    }
+}
